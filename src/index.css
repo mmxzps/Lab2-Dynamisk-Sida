@@ -416,7 +416,7 @@ h4 {
 
 /*added a delay for each box animation
 when moved and be displayed at differnet time
-this way they appear when line reaches them*/
+this way they appear when line reaches them.*/
 .educontainer:nth-child(2) {
   animation-delay: 1s;
 }
