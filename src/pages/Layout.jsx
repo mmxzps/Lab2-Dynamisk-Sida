@@ -12,7 +12,7 @@ const Layout = () => {
             <a href="/">
               <img src={Thumbsup} alt="smiley picture" className="profilepic" />
             </a>
-            <h3>Mojtaba Mobasheri</h3>
+            <h3 className='nav-mm'>Mojtaba Mobasheri</h3>
             <div className="logoContainer">
             <a href="https://www.linkedin.com/in/mmxzps/" target="_blank">
               <img src="src\assets\pictures/linkedIn.png" alt="linkedIn-logo" className="logo" />

@@ -120,8 +120,8 @@ function Projects () {
             {
               proj.map(repo => {
                 return (
-                  <div key={repo.name}>
-                  <Card style={{ width: '18rem' }}>
+                  <div className="cardContainer"key={repo.name}>
+                  <Card>
                     <Card.Img variant="top" src="src\assets\pictures\briefcase1.png" />
                     <Card.Body>
                       <Card.Title><h4>{repo.name}</h4></Card.Title>

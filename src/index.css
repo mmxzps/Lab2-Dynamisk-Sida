@@ -25,9 +25,10 @@ body {
 .card {
   background-color: #0a151f7a;
   box-shadow: 1px 1px 5px rgba(95, 92, 92, 0.377);
-  width: auto !important; 
+  max-width: 15rem; 
   height: auto;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 .container3{
 height: 100vh;
@@ -35,13 +36,26 @@ width: auto;
 display: flex;
 align-items: center
 }
+.cardContainer{
+  display: flex;
+}
 /* fetch-card css */
 .card-body {
   background-color: #43556930;
   border-radius: 4px;
   width: 15rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 3;
+  align-items: center;
 }
-
+.card-body .card-title, .card-text, .btn{
+  /* border: 1px solid red;-------------------------------- */
+  flex-shrink: 3;
+}
+.btn{
+  width: 8rem;
+}
 /* fetch-card css */
 .card-img-top {
   padding: 6%;
@@ -173,6 +187,7 @@ li {
   flex-direction: row;
   justify-content: space-around;
   width: 7rem;
+  padding-bottom: 3rem;
 }
 
 nav ul {
@@ -258,7 +273,10 @@ h3 {
   left: 0rem;
   overflow: scroll;
 }
-
+.nav-mm{
+  font-size: larger;
+  padding: 0.6rem;
+}
 .container {
   margin-top: 4rem;
   padding-top: 2rem;
@@ -279,6 +297,7 @@ h3 {
   flex-wrap: wrap;
   margin: 2rem;
   gap: 1rem;
+  padding: 11rem;
 }
 
 /* fetch-card css */
@@ -808,6 +827,9 @@ this way they appear when line reaches them.*/
     margin-top: 9rem;
     left: -3rem;
   }
+  .edutimeline::after{
+    left:118%;
+  }
 
   .left-container {
     left: 46%;
@@ -834,7 +856,7 @@ this way they appear when line reaches them.*/
   }
 
   .right-container {
-    left: 166.2%;
+    left: 132.2%;
   }
 
 }
@@ -982,7 +1004,7 @@ this way they appear when line reaches them.*/
   }
 
   .edutimeline::after {
-    left: 31px;
+    left: 170%;
   }
 
   .educontainer {
