@@ -11,9 +11,9 @@ const Jobs = () => {
       <main>
         <div className="edutimeline">
           {
-            jobs.map((j) => 
+            jobs.map((j) =>
             (
-              <div className="educontainer  right-container"key={e.title}>
+              <div className="educontainer  right-container" key={j.title}>
                 <img src={j.img} alt="company-logo" className="edupic" />
                 <div className="text-box">
                   <h2>{j.title}</h2>

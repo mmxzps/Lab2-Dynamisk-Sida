@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { RingLoader } from "react-spinners";
+//this css file is for my card in "projects"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Projects () {
   const [proj, setProj] = useState([]);
@@ -118,6 +120,7 @@ function Projects () {
             {
               proj.map(repo => {
                 return (
+                  <div key={repo.name}>
                   <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="src\assets\pictures\briefcase1.png" />
                     <Card.Body>
@@ -131,6 +134,7 @@ function Projects () {
                       </Button>
                     </Card.Body>
                   </Card>
+                  </div>
                 )
               })
             }
