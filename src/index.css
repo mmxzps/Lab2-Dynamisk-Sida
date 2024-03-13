@@ -1034,3 +1034,19 @@ this way they appear when line reaches them.*/
     display: none;
   }
 }
+@media print{
+  .box3{
+    display: inline-block;
+  }
+  .profilepic{
+    width: 10vh;
+    height: auto;
+  }
+  .aboutmeinfo{
+    max-width: 70%;
+    padding-top: 2rem;
+  }
+  footer{
+    display: none;
+  }
+}
