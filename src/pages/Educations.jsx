@@ -11,17 +11,19 @@ const Educations = () => {
     <>
       <main>
         <div className="edutimeline">
-          {educationData.map((education) =>
-          (
-            <div className="educontainer right-container">
-              <img src={education.img} alt="school-logo" className="edupic" />
-              <div className="text-box">
-                <h2>{education.school}</h2>
-                <small>{education.year}</small>
-                <p className="eduinfo">{education.major}</p>
+          {
+            educationData.map((e) =>
+            (
+              <div className="educontainer right-container" key={e.school}>
+                <img src={e.img} alt="school-logo" className="edupic" />
+                <div className="text-box">
+                  <h2>{e.school}</h2>
+                  <small>{e.year}</small>
+                  <p className="eduinfo">{e.major}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          }
         </div>
       </main >
     </>
