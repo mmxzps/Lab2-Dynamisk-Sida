@@ -1,4 +1,3 @@
-
 [
   {
     "educations": [
@@ -6,25 +5,25 @@
         "school":"ChasAcademy",
         "year":"2023-Present",
         "major":"C# .NET Fullstackdeveloper",
-        "img":"chas-logo.png"
+        "img":"https://raw.githubusercontent.com/mmxzps/Lab2-Dynamisk-Sida/main/src/assets/pictures/chas-logo.png"
       },
       {
         "school":"Mälardalens Tekniska Gymnasium",
         "year":"2022-2023",
         "major":"CNC operator",
-        "img":"../assets/pictures/mtg-logo.jpg"
+        "img":"src/assets/pictures/mtg-logo.jpg"
       },
       {
         "school":"Scania Academy",
         "year":"2021-2021",
         "major":"Teamleader in production",
-        "img":"https://github.com/mmxzps/Lab2-Dynamisk-Sida/blob/main/src/assets/pictures/scanialogo.png"
+        "img":"src/assets/pictures/scanialogo.png"
       },
       {
         "school":"Lindeskolan",
         "year":"2008-2012",
         "major":"IT-program",
-        "img":"/src/assets/pictures/linde-logo.png"
+        "img":"src/assets/pictures/linde-logo.png"
       }
     ]
   },
