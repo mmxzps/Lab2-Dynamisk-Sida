@@ -9,9 +9,9 @@ const Layout = () => {
       <aside>
         <nav>
           <ul>
-            <a href="/">
+            <NavLink to="/">
               <img src={Thumbsup} alt="smiley picture" className="profilepic" />
-            </a>
+            </NavLink>
             <h3 className='nav-mm'>Mojtaba Mobasheri</h3>
             <div className="logoContainer">
             <a href="https://www.linkedin.com/in/mmxzps/" target="_blank">
