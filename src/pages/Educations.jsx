@@ -15,7 +15,7 @@ const Educations = () => {
             educationData.map((e) =>
             (
               <div className="educontainer right-container" key={e.school}>
-                <img src={e.img} alt="school-logo" className="edupic" />
+                <img src={require(`../assets/pictures/${e.img}`).default} alt="school-logo" className="edupic" />
                 <div className="text-box">
                   <h2>{e.school}</h2>
                   <small>{e.year}</small>
