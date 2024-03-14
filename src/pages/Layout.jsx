@@ -15,10 +15,10 @@ const Layout = () => {
             <h3 className='nav-mm'>Mojtaba Mobasheri</h3>
             <div className="logoContainer">
             <a href="https://www.linkedin.com/in/mmxzps/" target="_blank">
-              <img src="src\assets\pictures/linkedIn.png" alt="linkedIn-logo" className="logo" />
+              <img src="https://raw.githubusercontent.com/mmxzps/Lab2-Dynamisk-Sida/main/src/assets/pictures/linkedIn.png" alt="linkedIn-logo" className="logo" />
             </a>
             <a href="https://github.com/mmxzps" target="_blank">
-              <img src="src\assets\pictures/github.png" alt="github-logo" className="logo" />
+              <img src="https://raw.githubusercontent.com/mmxzps/Lab2-Dynamisk-Sida/main/src/assets/pictures/github.png" alt="github-logo" className="logo" />
             </a>
             </div>
             <li><NavLink to="/">Home</NavLink></li>

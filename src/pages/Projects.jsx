@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import { RingLoader } from "react-spinners";
 //this css file is for my card in "projects"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import briefcase from "../assets/pictures/briefcase1.png"
+import briefcase from "https://raw.githubusercontent.com/mmxzps/Lab2-Dynamisk-Sida/main/src/assets/pictures/briefcase1.png"
 
 function Projects () {
   const [proj, setProj] = useState([]);
