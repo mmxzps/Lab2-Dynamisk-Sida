@@ -35,7 +35,7 @@ body {
 }
 .container3{
 height: 100vh;
-width: auto;
+width: 100vw;
 display: flex;
 align-items: center
 }
@@ -57,7 +57,7 @@ align-items: center
   flex-shrink: 3;
 }
 .btn{
-  width: 7rem;
+  max-width: 7rem;
   margin: 1%;
   padding: 2%;
 }
@@ -297,7 +297,7 @@ h3 {
 .box3 {
   display: flex;
   justify-content: center;
-  width: 60vw;
+  width: 100vw;
   height: auto;
   flex-wrap: wrap;
   margin: 2rem;

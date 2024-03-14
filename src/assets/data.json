@@ -6,19 +6,19 @@
         "school":"ChasAcademy",
         "year":"2023-Present",
         "major":"C# .NET Fullstackdeveloper",
-        "img":"/src/assets/pictures/chas-logo.png"
+        "img":"../assets/pictures/chas-logo.png"
       },
       {
         "school":"Mälardalens Tekniska Gymnasium",
         "year":"2022-2023",
         "major":"CNC operator",
-        "img":"/src/assets/pictures/mtg-logo.jpg"
+        "img":"../assets/pictures/mtg-logo.jpg"
       },
       {
         "school":"Scania Academy",
         "year":"2021-2021",
         "major":"Teamleader in production",
-        "img":"/src/assets/pictures/scanialogo.png"
+        "img":"../assets/pictures/scanialogo.png"
       },
       {
         "school":"Lindeskolan",
