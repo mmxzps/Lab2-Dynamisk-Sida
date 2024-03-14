@@ -129,9 +129,15 @@ function Projects () {
                         <h5>Language: {repo.language}</h5>
                         <span></span>
                       </Card.Text>
+                      <div className="btnC">
                       <Button variant="dark">
                         <Card.Link href={repo.html_url} target="_blank">View project</Card.Link>
                       </Button>
+                      <Button variant="dark">
+                        <Card.Link href={repo.html_url} target="_blank">View info</Card.Link>
+                      </Button>
+                      </div>
+
                     </Card.Body>
                   </Card>
                   </div>

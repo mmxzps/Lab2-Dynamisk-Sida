@@ -1,7 +1,12 @@
-import React from 'react'
-import './script'
+import React, { useState } from 'react'
+import './script.js'
 
 const About = () => {
+  const [ismodalVisible, setIsMobalVisible] = useState(false);
+
+  const toggleModal=()=>{
+    setIsMobalVisible(!ismodalVisible)
+  }
   return (
     <>
      

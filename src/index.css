@@ -22,6 +22,9 @@ body {
 }
 
 /* fetch-card css */
+.btnC{
+  display: flex;
+}
 .card {
   background-color: #0a151f7a;
   box-shadow: 1px 1px 5px rgba(95, 92, 92, 0.377);
@@ -54,7 +57,9 @@ align-items: center
   flex-shrink: 3;
 }
 .btn{
-  width: 8rem;
+  width: 7rem;
+  margin: 1%;
+  padding: 2%;
 }
 /* fetch-card css */
 .card-img-top {
