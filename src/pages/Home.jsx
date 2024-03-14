@@ -9,7 +9,7 @@ const Home = () => {
           <div className="i-kortinfo">
             <div className="nameintro">
               <h2 id="mojtaba">Mojtaba Mobasheri</h2>
-              <img src="src/assets/pictures/csharphem.png" alt="csharp-logo" className="i-hemlogo" />
+              <img src="../assets/pictures/csharphem.png" alt="csharp-logo" className="i-hemlogo" />
               <p>Fullstack .NET student</p>
               <p>C#, ASP.NET, SQL, HTML, Javascript, CSS</p>
             </div>
