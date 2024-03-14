@@ -37,7 +37,7 @@ const About = () => {
           {/*Modal pop up */}
           <div id="myModal" className="modal">
             <div className="modal-content">
-              <a href="#" className="close"> × </a>
+              <a href="#" className="close"> x </a>
 
               <div className="contact-container">
                 <form action="https://api.web3forms.com/submit" method="POST" className="contact-left" >
