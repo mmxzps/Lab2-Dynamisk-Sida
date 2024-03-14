@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/Lab2-Dynamisk-Sida'>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
