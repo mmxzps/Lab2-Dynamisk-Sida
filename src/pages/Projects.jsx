@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import { RingLoader } from "react-spinners";
 //this css file is for my card in "projects"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import briefcase from "src\assets\pictures\briefcase1.png"
 
 function Projects () {
   const [proj, setProj] = useState([]);
@@ -122,7 +123,7 @@ function Projects () {
                 return (
                   <div className="cardContainer"key={repo.name}>
                   <Card>
-                    <Card.Img variant="top" src="src\assets\pictures\briefcase1.png" />
+                    <Card.Img variant="top" src={briefcase} />
                     <Card.Body>
                       <Card.Title><h4>{repo.name}</h4></Card.Title>
                       <Card.Text>
