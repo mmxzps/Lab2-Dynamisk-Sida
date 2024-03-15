@@ -6,11 +6,17 @@ import { RingLoader } from "react-spinners";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import briefcase from "../assets/pictures/briefcase1.png"
 
-function Projects () {
+function Projects() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const toggleModal = () =>{
+    setIsModalVisible(!isModalVisible)
+  }
+
   const [proj, setProj] = useState([]);
   const [isLoading, setisLoading] = useState(true);
   const gitUrl = 'https://api.github.com/users/mmxzps/repos'
-  const projectIds = [727894890, 730794809, 731188727];
+  const projectIds = [727894890, 730794809, 731188727, 758907974];
 
   useEffect(() => {
     fetch(gitUrl)
@@ -27,12 +33,12 @@ function Projects () {
         const filtered = data.filter(repo => projectIds.includes(repo.id));
 
         //Vi har satt en delay så att vi får se loading animeringen.
-        setTimeout(()=>{
+        setTimeout(() => {
           //Här lägger vi filtrerade datan inuti vår "proj"
           setProj(filtered)
           //Här sätter vi loading till false EFTER att vi har fått vår data.
           setisLoading(false)
-        },900)
+        }, 900)
       })
   }, [])
 
@@ -53,8 +59,8 @@ function Projects () {
   return (
     <>
       <main>
-      <div className='För att gömma koden'>
-        {/* <div className="myprojects">
+        <div className='För att gömma koden'>
+          {/* <div className="myprojects">
 
           <div className="kortinfo">
             <h2>Here is my two latest projects!</h2>
@@ -114,33 +120,49 @@ function Projects () {
           </div>
         
         </div> */}
-      </div>
-        
+        </div>
+
         <div className='container3'>
           <div className="box3">
             {
               proj.map(repo => {
                 return (
-                  <div className="cardContainer"key={repo.name}>
-                  <Card>
-                    <Card.Img variant="top" src={briefcase} />
-                    <Card.Body>
-                      <Card.Title><h4>{repo.name}</h4></Card.Title>
-                      <Card.Text>
-                        <h5>Language: {repo.language}</h5>
-                        <span></span>
-                      </Card.Text>
-                      <div className="btnC">
-                      <Button variant="dark">
-                        <Card.Link href={repo.html_url} target="_blank">View project</Card.Link>
-                      </Button>
-                      <Button variant="dark">
-                        <Card.Link href={repo.html_url} target="_blank">View info</Card.Link>
-                      </Button>
-                      </div>
+                  <div className="cardContainer" key={repo.name}>
+                    <Card>
+                      <Card.Img variant="top" src={briefcase} />
+                      <Card.Body>
+                        <Card.Title><h4>{repo.name}</h4></Card.Title>
+                        <Card.Text>
+                          <h5>Language: {repo.language}</h5>
+                          <span></span>
+                        </Card.Text>
+                        <div className="btnC">
+                          {/* <Button variant="dark">
+                            <Card.Link href={repo.html_url} target="_blank">View project</Card.Link>
+                          </Button> */}
+                          <Button variant="dark">
+                            <Card.Link onClick={() => { setSelectedProject(repo); toggleModal(); }}>View info</Card.Link> 
+                          </Button>
 
-                    </Card.Body>
-                  </Card>
+
+
+                         {isModalVisible &&(
+                          <section>
+                           <div className="popup" id="popup1">
+                           <div className="pop-inner">
+                             <h2>{selectedProject.name}</h2>
+                             <p>{selectedProject.description} </p>
+                             <a href={selectedProject.html_url} className="pbutton modalB"  target="_blank">View project</a>
+                             <a onClick={()=>{setSelectedProject(null); toggleModal();}} className="pbutton modalB">Close</a>
+                           </div>
+                         </div>
+                         </section>
+                         )}
+
+                        </div>
+
+                      </Card.Body>
+                    </Card>
                   </div>
                 )
               })

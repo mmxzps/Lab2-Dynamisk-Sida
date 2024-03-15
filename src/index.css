@@ -22,27 +22,31 @@ body {
 }
 
 /* fetch-card css */
-.btnC{
+.btnC {
   display: flex;
 }
+
 .card {
   background-color: #0a151f7a;
   box-shadow: 1px 1px 5px rgba(95, 92, 92, 0.377);
-  max-width: 15rem; 
+  max-width: 15rem;
   height: auto;
   display: flex;
   align-items: center;
   flex: 1 3;
 }
-.container3{
-height: 100vh;
-width: 100vw;
-display: flex;
-align-items: center
+
+.container3 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center
 }
-.cardContainer{
+
+.cardContainer {
   display: flex;
 }
+
 /* fetch-card css */
 .card-body {
   background-color: #43556930;
@@ -53,15 +57,20 @@ align-items: center
   flex-shrink: 3;
   align-items: center;
 }
-.card-body .card-title, .card-text, .btn{
+
+.card-body .card-title,
+.card-text,
+.btn {
   /* border: 1px solid red;-------------------------------- */
   flex-shrink: 3;
 }
-.btn{
+
+.btn {
   width: 7rem;
   margin: 1%;
   padding: 2%;
 }
+
 /* fetch-card css */
 .card-img-top {
   padding: 6%;
@@ -278,10 +287,12 @@ h3 {
   position: relative;
   left: 0rem;
 }
-.nav-mm{
+
+.nav-mm {
   font-size: larger;
   padding: 0.6rem;
 }
+
 .container {
   margin-top: 4rem;
   padding-top: 2rem;
@@ -319,6 +330,10 @@ h4 {
   text-shadow: 1px 1px #ffcc0081;
   font-size: 0.7rem;
 }
+.card-link{
+  padding: 0.7rem 0;
+  width: 100%;
+}
 
 .box2 {
   margin-left: 1rem;
@@ -355,9 +370,9 @@ h4 {
 /* ---POP UP MODAL ------------------------------------------ */
 
 .popup {
-  display: none;
+  /* display: none;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; */
   transition: 0.4s;
 
   position: fixed;
@@ -377,24 +392,28 @@ h4 {
   background-color: rgba(12, 11, 11);
   padding: 32px 16px;
   width: 40%;
-  height: 15%;
+  height: auto;
   justify-content: center;
   align-items: center;
-  max-width: 768;
+  max-width: 45rem;
   border-radius: 16px;
   box-shadow: 0px 6px 12px rgb(20, 20, 20);
 }
 
+.pop-inner h2 {
+  color: white;
+}
+
 .pop-inner p {
   font-size: medium;
-  color: yellow;
+  color: #fab62d;
   font-weight: lighter;
 }
 
-.popup:target {
+/* .popup:target {
   opacity: 1;
   pointer-events: all;
-}
+} */
 
 .pbutton {
   margin-top: 10px;
@@ -406,8 +425,13 @@ h4 {
   width: max-content;
 }
 
+.modalB{
+  margin:0.5rem
+}
+
 .pbutton:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 /*------------------------------- TIMELINE*/
@@ -530,7 +554,7 @@ this way they appear when line reaches them.*/
 .text-box h2 {
   font-weight: 600;
   font-size: 1.3rem;
-  color:#681622;
+  color: #681622;
 }
 
 .text-box small {
@@ -538,11 +562,12 @@ this way they appear when line reaches them.*/
   margin-bottom: 1rem;
   color: #974207;
 }
-.text-box p{
+
+.text-box p {
   color: #cecaca;
 }
 
-.loadContainer{
+.loadContainer {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -833,8 +858,9 @@ this way they appear when line reaches them.*/
     margin-top: 9rem;
     left: -3rem;
   }
-  .edutimeline::after{
-    left:118%;
+
+  .edutimeline::after {
+    left: 118%;
   }
 
   .left-container {
@@ -1000,9 +1026,26 @@ this way they appear when line reaches them.*/
     position: relative;
     width: 50%;
   }
-  .i-kortinfo{
+
+  .i-kortinfo {
     margin-left: 4rem;
   }
+
+  footer {
+    display: none;
+  }
+
+  /* fetch-card css */
+.box3 h5,
+h4 {
+  font-size: 1rem;
+}
+
+.btn {
+  width: 5.5rem;
+  margin: 1% 0%;
+  padding: 2% 0%;
+}
 
   /*----------------------------------For timeline*/
   .edutimeline {
@@ -1065,19 +1108,24 @@ this way they appear when line reaches them.*/
     display: none;
   }
 }
-@media print{
-  .box3{
+
+/*-----------------Print */
+@media print {
+  .box3 {
     display: inline-block;
   }
-  .profilepic{
+
+  .profilepic {
     width: 10vh;
     height: auto;
   }
-  .aboutmeinfo{
+
+  .aboutmeinfo {
     max-width: 70%;
     padding-top: 2rem;
   }
-  footer{
+
+  footer {
     display: none;
   }
 }
