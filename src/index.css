@@ -418,11 +418,11 @@ h4 {
 .pbutton {
   margin-top: 10px;
   padding: 7px 12px;
-  background-color: rgba(21, 27, 88, 0.596);
+  background-color: #212529;;
   border-radius: 10px;
   display: inline-block;
   font-size: 1rem;
-  width: max-content;
+  width: 6rem;
 }
 
 .modalB{
@@ -836,9 +836,8 @@ this way they appear when line reaches them.*/
 
   .pop-inner {
     font-size: medium;
-    padding-top: 0;
-    padding-bottom: 5rem;
-    height: 17vh;
+    padding: 1;
+    /* height: 17vh; */
   }
 
   /*EduTime line---------------------------1000px--media-query-------*/
@@ -1039,6 +1038,9 @@ this way they appear when line reaches them.*/
 .box3 h5,
 h4 {
   font-size: 1rem;
+}
+.box3{
+  margin-top: 40rem;
 }
 
 .btn {
