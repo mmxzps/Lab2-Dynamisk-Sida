@@ -1,1 +1,1 @@
-Sitemap: https://mmxzps.github.io/Lab2-Dynamisk-Sida/sitemap.txt
+Sitemap: https://raw.githubusercontent.com/mmxzps/Lab2-Dynamisk-Sida/main/sitemap.txt
