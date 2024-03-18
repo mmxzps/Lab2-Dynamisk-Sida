@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes,HashRouter } from 'react-router-dom'
 import Layout from './pages/Layout'
 import About from './pages/About'
 import Home from './pages/Home'
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename='/Lab2-Dynamisk-Sida'>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
             <Route path="/educations" element={<Educations />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
