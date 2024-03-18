@@ -130,6 +130,7 @@ header {
   top: 0rem;
   left: 5rem;
   color: white;
+  padding: 6px;
 }
 
 .i-kortinfo p {
@@ -139,6 +140,7 @@ header {
   top: -5rem;
   left: 3rem;
   color: white;
+  padding: 8px;
 }
 
 .nameintro {
@@ -1002,6 +1004,7 @@ this way they appear when line reaches them.*/
     top: 10rem;
     left: 1rem;
     color: white;
+    padding: 0;
   }
 
   .i-hemlogo {
@@ -1019,6 +1022,7 @@ this way they appear when line reaches them.*/
     top: 7rem;
     left: 4rem;
     color: white;
+    padding: 0;
   }
 
   .nameintro {
@@ -1130,4 +1134,10 @@ h4 {
   footer {
     display: none;
   }
+  .card{
+    max-width: 12rem;
+  }
+.cardContainer{
+  display: inline-flex;
+}
 }

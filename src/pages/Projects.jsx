@@ -38,7 +38,7 @@ function Projects() {
           setProj(filtered)
           //Här sätter vi loading till false EFTER att vi har fått vår data.
           setisLoading(false)
-        }, 900)
+        }, 500)
       })
   }, [])
 
